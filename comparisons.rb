@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts number_students <= 21
 # this should print: true
 
 
@@ -53,21 +60,23 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+# The comparison operator is checking if 9 is larger than 4, so it should return true
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# books is given a value of 3, the comparison operator is checking if 4 is less than books(3), it should return false
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# friends is given a value of 6 and siblings is given a value of 2,
+# the comparison operator is used to check if friends is more that siblings which should return true
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# attendees is given a value of 9 and meals a value of 8
+# the comparison value is checking if attendees and meals are not the same
 
 
 #-------------------
@@ -90,15 +99,15 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play && age <= 1
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: True, because I set the comparison to be either less than or equal to 1
